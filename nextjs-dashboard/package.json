@@ -3,7 +3,9 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev --turbopack",
-    "start": "next start"
+    "start": "next start",
+    "db:seed": "curl -X GET http://localhost:3000/api/seed",
+    "db:health": "curl -X GET http://localhost:3000/api/health"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
